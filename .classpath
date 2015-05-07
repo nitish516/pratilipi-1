@@ -3,27 +3,46 @@
 	<classpathentry kind="src" path="src"/>
 	<classpathentry kind="src" path="claymus/src"/>
 	<classpathentry kind="src" output="test-classes" path="test"/>
+	<classpathentry kind="output" path="war/WEB-INF/classes"/>
+
+	<classpathentry kind="con" path="com.google.gwt.eclipse.core.GWT_CONTAINER/gwt-2.6.0"/>
+	<classpathentry kind="con" path="com.google.appengine.eclipse.core.GAE_CONTAINER/appengine-java-sdk-1.9.18"/>
 	<classpathentry kind="con" path="org.eclipse.jdt.launching.JRE_CONTAINER"/>
+
+	<!-- GAE Remote API -->
 	<classpathentry kind="lib" path="war/WEB-INF/lib/appengine-remote-api.jar"/>
+
+	<!-- FreeMarker for GAE -->
 	<classpathentry kind="lib" path="war/WEB-INF/lib/freemarker-gae-2.3.20.jar">
 		<attributes>
 			<attribute name="javadoc_location" value="http://freemarker.org/docs/api/"/>
 		</attributes>
 	</classpathentry>
+
+	<!-- Google Cloud Storage API -->
+	<classpathentry kind="con" path="com.google.gdt.eclipse.managedapis.MANAGED_API_CONTAINER/storage-v1r28lv1.18.0-rc"/>
 	<classpathentry kind="lib" path="war/WEB-INF/lib/appengine-gcs-client-0.4.jar"/>
 	<classpathentry kind="lib" path="war/WEB-INF/lib/guava-17.0.jar"/>
 	<classpathentry kind="lib" path="war/WEB-INF/lib/joda-time-2.4.jar"/>
+
+	<!-- Google Analytics API -->
+	<classpathentry kind="con" path="com.google.gdt.eclipse.managedapis.MANAGED_API_CONTAINER/analytics-v3r113lv1.18.0-rc"/>
+
+	<!-- Google Drive SDK -->
+	<classpathentry kind="con" path="com.google.gdt.eclipse.managedapis.MANAGED_API_CONTAINER/drive-v2r162lv1.18.0-rc"/>
+
+	<!-- Set up for Apache Commons FileUpload -->
 	<classpathentry kind="lib" path="war/WEB-INF/lib/commons-fileupload-1.3.1.jar"/>
 	<classpathentry kind="lib" path="war/WEB-INF/lib/commons-io-2.4.jar"/>
+
+	<!-- Set up for Password Encryption -->
 	<classpathentry kind="lib" path="war/WEB-INF/lib/commons-codec-1.9.jar"/>
+
+	<!-- Set up for GWT Super Dev mode -->
 	<classpathentry kind="var" path="ECLIPSE_HOME/plugins/com.google.gwt.eclipse.sdkbundle_2.6.0/gwt-2.6.0/gwt-codeserver.jar"/>
+
+	<!-- Set up for unit testing -->
 	<classpathentry kind="con" path="org.eclipse.jdt.junit.JUNIT_CONTAINER/4"/>
 	<classpathentry kind="var" path="ECLIPSE_HOME/plugins/com.google.appengine.eclipse.sdkbundle_1.9.15/appengine-java-sdk-1.9.15/lib/testing/appengine-testing.jar"/>
 	<classpathentry kind="var" path="ECLIPSE_HOME/plugins/com.google.appengine.eclipse.sdkbundle_1.9.15/appengine-java-sdk-1.9.15/lib/impl/appengine-api-stubs.jar"/>
-	<classpathentry kind="con" path="com.google.appengine.eclipse.core.GAE_CONTAINER/App Engine"/>
-	<classpathentry kind="con" path="com.google.gwt.eclipse.core.GWT_CONTAINER/GWT"/>
-	<classpathentry kind="con" path="com.google.gdt.eclipse.managedapis.MANAGED_API_CONTAINER/analytics-v3r113lv1.18.0-rc"/>
-	<classpathentry kind="con" path="com.google.gdt.eclipse.managedapis.MANAGED_API_CONTAINER/drive-v2r168lv1.18.0-rc"/>
-	<classpathentry kind="con" path="com.google.gdt.eclipse.managedapis.MANAGED_API_CONTAINER/storage-v1r33lv1.18.0-rc"/>
-	<classpathentry kind="output" path="war/WEB-INF/classes"/>
 </classpath>
